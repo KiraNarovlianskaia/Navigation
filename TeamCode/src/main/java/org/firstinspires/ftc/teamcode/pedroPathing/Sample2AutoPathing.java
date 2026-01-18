@@ -8,7 +8,7 @@ import com.pedropathing.util.Timer;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 
-@Autonomous
+@Autonomous(name = "2 Lines + Rotation", group = "Tests")
 public class Sample2AutoPathing extends OpMode {
     private Follower follower;
     private Timer pathTimer, opModeTimer;

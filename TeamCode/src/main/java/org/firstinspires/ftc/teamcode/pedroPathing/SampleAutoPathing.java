@@ -11,7 +11,7 @@ import com.pedropathing.util.Timer;
 
 import kotlin.jvm.internal.PropertyReference0Impl;
 
-@Autonomous
+@Autonomous(name = "Straight Line", group = "Tests")
 public class SampleAutoPathing extends OpMode {
     private Follower follower;
     private Timer pathTimer, opModeTimer;
@@ -41,7 +41,7 @@ public class SampleAutoPathing extends OpMode {
     public void  statePathUpdate() {
         switch (pathState){
             case DRIVE_STARTPOS_SHOOT_POS:
-                follower.followPath(driveStartPosShootPos,true);
+                follower.followPath(driveStartPosShootPos, 0.5,true);
                 setPathState(PathState.SHOOT_PRELOAD);
                 break;
             case SHOOT_PRELOAD:

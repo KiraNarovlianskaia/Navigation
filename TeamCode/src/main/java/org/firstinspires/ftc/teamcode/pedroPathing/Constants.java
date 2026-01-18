@@ -63,4 +63,6 @@ public class Constants {
                 .mecanumDrivetrain(driveConstants)
                 .build();
     }
+    public static PathConstraints slowConstraints =
+            new PathConstraints(0.5, 100, 1.5, 1);
 }
